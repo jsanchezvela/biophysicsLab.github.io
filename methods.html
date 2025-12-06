@@ -160,8 +160,8 @@
 
 .methods-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  line-height: 1.8;
+  font-size: 20px;
+  line-height: 1.7;
   color: #000;
   text-align: justify;
   text-justify: inter-word;
@@ -321,7 +321,7 @@
 }
 
 .equipment-text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.8;
   text-align: justify;
   color: #000;
@@ -347,7 +347,7 @@
 
 
 .equipment-link {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 5px;
   text-align: justify;
   color: #000;
@@ -475,6 +475,86 @@
         font-size: 1.05rem;
       }
     }
+
+
+
+/* =============================
+   MOBILE LAYOUT FIX (PHONES)
+============================= */
+@media (max-width: 700px) {
+
+  /* Header spacing */
+  .header {
+    padding: 15px 20px;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+
+  /* Banner text resize */
+  .banner-text h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Methods two-column → stack */
+  .methods-two-col {
+    flex-direction: column;
+  }
+
+  .methods-two-col img,
+  .methods-two-col .left-text {
+    width: 100%;
+  }
+
+  /* Equipment two-column → stack */
+  .equipment-two-col {
+    flex-direction: column;
+  }
+
+  .equipment-left,
+  .equipment-right {
+    width: 100%;
+  }
+
+  .equipment-title {
+    font-size: 1.2rem;
+  }
+
+  .equipment-text {
+    font-size: 16px;
+  }
+
+  /* Center the equipment link correctly */
+  .equipment-section {
+    padding: 0 20px;
+  }
+
+  .equipment-link {
+    margin-bottom: 120px;
+    font-size: 16px;
+  }
+
+  /* Footer stacking */
+  .final-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .logo-container2 {
+    align-self: flex-start;
+  }
+}
+
+
+
+
+    
   </style>
 </head>
 
@@ -628,3 +708,4 @@ High-performance TIRF and widefield fluorescence microscope coupled to a time-re
 
 </body>
 </html>
+
