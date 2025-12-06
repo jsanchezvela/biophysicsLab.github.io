@@ -415,6 +415,114 @@
         font-size: 1.05rem;
       }
     }
+
+
+
+/* =============================
+   MOBILE RESPONSIVE FIXES
+============================= */
+@media (max-width: 600px) {
+
+  /* Header */
+  .header {
+    padding: 14px 18px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lab-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+
+  .top-logo {
+    height: 38px;
+  }
+
+  /* Banner */
+  .banner-image {
+    height: 26vh;
+  }
+
+  .banner-text h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Research text blocks */
+  .research-text {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .bold-title {
+    font-size: 1.2rem;
+  }
+
+  /* Image + Publications → STACK ON MOBILE */
+  .research-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .research-left,
+  .research-right {
+    width: 100%;
+  }
+
+  .research-left {
+    height: auto;
+  }
+
+  .research-main-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .research-right {
+    padding: 20px;
+  }
+
+  .pub-title {
+    font-size: 1.2rem;
+  }
+
+  .pub-list {
+    font-size: 0.95rem;
+  }
+
+  /* Footer */
+  .final-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .left-container {
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+}
+
+
+
+
+    
   </style>
 </head>
 
@@ -576,5 +684,6 @@
 
 </body>
 </html>
+
 
 
